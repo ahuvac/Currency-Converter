@@ -14,8 +14,11 @@ namespace CurrencyConvert
             var exchangeRatesApi = RestService.For<ExchangeRateService>("https://openexchangerates.org/api");
             var service = await exchangeRatesApi.getRatesAsync();
 
-            Console.Write("israel  " + service.Rates["ILS"]);
-            
+            Console.WriteLine("Israel  " + service.Rates["ILS"]);
+            Console.WriteLine("Bolivia  " + service.Rates["BOB"]);
+            Console.WriteLine("England  " + service.Rates["GBP"]);
+            Console.WriteLine("Euro  " + service.Rates["EUR"]);
+
         }
     }
 }
