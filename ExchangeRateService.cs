@@ -3,6 +3,7 @@ using Refit;
 
 namespace CurrencyConvert
 {
+    [Headers("Accept: application/json")]
     public interface ExchangeRateService
     {
         [Get("/latest.json?app_id=5891c536b91c48fcb68983823cf0166b")]
